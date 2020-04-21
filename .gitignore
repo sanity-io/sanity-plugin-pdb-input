@@ -1,0 +1,20 @@
+# Logs
+*.log
+
+# Compiled files
+build
+
+# Coverage directories used by tools like istanbul
+coverage
+.nyc_output
+
+# Dependency directories
+node_modules
+
+# UMD bundle
+umd
+
+# Lockfiles
+yarn.lock
+
+build
