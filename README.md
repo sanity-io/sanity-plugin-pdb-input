@@ -68,4 +68,4 @@ Read more about [schemas in Sanity here](https://www.sanity.io/docs/the-schema).
 
 # Displaying the PDB models in your web frontend
 
-This plugin uses bio-pv node module to let the editor manipulate the camera settings. You may use the same library for displaying interactive PDB models in your web frontend. You can find it [here](https://www.npmjs.com/package/bio-pv)
+This plugin uses the `bio-pv` node module to let the editor manipulate the camera settings. You may use the same library for displaying interactive PDB models in your web frontend. You can find it [here](https://www.npmjs.com/package/bio-pv)
