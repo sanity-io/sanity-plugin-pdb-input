@@ -8,22 +8,24 @@ Not familiar with Sanity? [Visit www.sanity.io](https://www.sanity.io/)
 
 ## Quick start
 
-- While in your project folder, run `sanity install pdb-input`.
-  Read more about [using plugins in Sanity here](https://www.sanity.io/docs/plugins).
+While in your project folder, run `sanity install pdb-input`. Read more about [using plugins in Sanity here](https://www.sanity.io/docs/plugins).
 
 ## Usage
 
 Use it in your schema types:
 
 ```js
-// [...]
+
 {
+  type: 'document',
+  name: 'myDocumentType',
+  title: 'A document type with a protein data structure',
   fields: [
     // [...]
     {
-      name: "proteinModel",
-      title: "A PDB 3d model",
-      type: "protein",
+      name: "proteinModel", // Property name chosen by you
+      title: "A PDB 3d model", // Chosen by you
+      type: "protein" // The type defined by this plugin, needs to be this value
     },
   ];
 }
@@ -34,6 +36,8 @@ Note that the above only works if you import and use the `all:part:@sanity/base/
 Read more about [schemas in Sanity here](https://www.sanity.io/docs/the-schema).
 
 ## Data model example
+
+This is an example of the strucutred content this plugin will save on your documents where you add a `protein` typed field.
 
 ```js
 {
@@ -70,4 +74,6 @@ Read more about [schemas in Sanity here](https://www.sanity.io/docs/the-schema).
 
 # Displaying the PDB models in your web frontend
 
-This plugin uses the `bio-pv` node module to let the editor manipulate the camera settings. You may use the same library for displaying interactive PDB models in your web frontend. You can find it [here](https://www.npmjs.com/package/bio-pv)
+This plugin uses the `bio-pv` node module to let the editor manipulate the camera settings. You may use the same library for displaying interactive PDB models in your web frontend. You can find it [here](https://www.npmjs.com/package/bio-pv).
+
+The display and interactivity of the models are rendered in WebGL so this works nicely on mobile, tablets etc both in the Sanity Studio and in your web frontend presentations.
