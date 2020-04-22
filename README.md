@@ -2,6 +2,8 @@
 
 This is a plugin which adds an object type `protein` to your Sanity schema, and provides a custom input component to let you select a PDB protein model in a predefined list and adjust the starting camera position and zoom.
 
+![](PDB.gif)
+
 Not familiar with Sanity? [Visit www.sanity.io](https://www.sanity.io/)
 
 ## Quick start
